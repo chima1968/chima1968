@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @chima1968
-- 👀 I’m interested in machine learning
+- 👀 I’m interested in software engineering
 - 🌱 I’m currently learning python and c 
-- 💞️ I’m looking to collaboration on a statistics calculator i need someone to do the ui/ux for the program
+- 💞️ I’m looking to collaborate or contribute to python and c based projects
 - 📫 How to reach me  chimarokeumunna98@gmail.com  or chimaroke.umunna@stu.cu.edu.ng
 
 <!---
