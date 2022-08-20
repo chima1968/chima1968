@@ -1,9 +1,9 @@
 from sqlite3 import Error
 import sqlite3
-
+#imported the sqlite package
 
 def create_connection(db_file):
-    
+    #this function is  called in order to create the database if it  wasnt created initially or just connect to it 
     conn=None
     
     try:
@@ -14,7 +14,7 @@ def create_connection(db_file):
 
 def create_table(conn,name):
     
-    
+    #this function is for creating tables in the database file
     try:
            cur=conn.cursor()
            cur.execute(name)
@@ -26,18 +26,12 @@ def create_table(conn,name):
     
 
 def show_all(conn,db_file):
-    
+    #this function shows all rows of data 
     
     conn=sqlite3.connect(db_file)
 
     cur=conn.cursor()
-
-    #create a table
-
-
-    #update records
-
-    
+     
     cur.execute("SELECT rowid, * FROM Student ")
     items=cur.fetchall()
 
@@ -46,15 +40,15 @@ def show_all(conn,db_file):
          print(item )
     #order by 
 
-    # print("commit successful ")
+    print("commit successful ")
     #commit the command
     conn.commit()
 
     #close the connection
     conn.close()
-#add a new record to the table   
+
 def add_one(first,last,age,mat_no):
-    
+    #add a new record to the table   
     conn=sqlite3.connect('school_register.db')
     cur=conn.cursor()
     cur.execute("INSERT INTO Student VALUES (?,?,?,?)",(first,last,age,mat_no))
